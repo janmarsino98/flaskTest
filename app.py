@@ -27,7 +27,7 @@ JOBS = [
 def hello_jan():
     return render_template('jan.html', jobs = JOBS)
 
-@app.route("/api/jobs")
+@app.route("/api/ejobs")
 def list_jobs():
     return jsonify(JOBS)
     
@@ -35,3 +35,5 @@ def list_jobs():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
+    print("Done...")
+    
